@@ -8,7 +8,7 @@ function check() {
   const s1 = +s.value,
     r1 = +r.value,
     k1 = +k.value;
-  if (s1 ** (1 / 2) - 2 * r1 >= k1) {
+  if ((s1 ** (1 / 2)) - 2 * r1 >= k1) {
     text.innerText =
       "Да, круглую стену такого радиуса можно поместить в комнате.";
   } else {
