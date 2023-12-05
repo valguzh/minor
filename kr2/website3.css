@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  height: 100%;
+}
+.header {
+  min-height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(12, 19, 23, 0.7),
+      rgba(126, 13, 92, 0.7)
+    ),
+    url(confections.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+}
+#us {
+  text-decoration-line: underline;
+  text-decoration-color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover:after {
+  width: 100%;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+.nav-links ul li ul {
+  position: absolute;
+  bottom: 5%;
+  left: 85%;
+  width: 180px;
+  background: #ec7171;
+  text-align: center;
+  display: none;
+}
+.nav-links ul li ul li {
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.nav-links ul li:hover > ul {
+  display: initial;
+}
+
+.img1 {
+  max-width: 400px;
+  float: left;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.wrapper {
+  margin: 100px auto;
+  width: 70%;
+}
+.textbox1 {
+  position: relative;
+  left: 20px;
+}
+.textbox1 h1 {
+  font-size: 42px;
+}
+.textbox1 p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.wrapper2 {
+  margin: 100px;
+  width: 100%;
+}
+.textbox2 {
+  position: absolute;
+  margin-bottom: 50px auto;
+  background-color: rgb(254, 214, 239);
+}
+.textbox2 h2 {
+  font-size: 25px;
+}
+.textbox2 p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.shop__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.shop__card {
+  margin-top: 50px;
+  width: 450px;
+  border-radius: 5px;
+}
+.textbox3 {
+  margin-top: 7%;
+  width: 100%;
+  align-items: center;
+  margin-left: 2%;
+}
+.textbox3 h1 {
+  font-size: 42px;
+}
+.textbox3 p {
+  font-size: 18px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.shop__card-wrapper {
+  padding: 10px;
+}
+.shop__card-photo img {
+  width: 100%;
+  border-radius: 16px;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+.shop__card-photo img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.shop__card-title {
+  text-align: center;
+  margin-top: 10px;
+}
+.shop__card-descr {
+  text-align: center;
+  margin-top: 10px;
+}
+#new {
+  margin-top: 50%;
+  width: 100%;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .order__form {
+    width: 320px;
+  }
+  .order__form-radio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: 320px;
+  }
+  .shop {
+    background-color: rgb(250, 224, 194);
+  }
+  .shop-wrapper {
+    padding-top: 50px;
+  }
+  .shop__title {
+    text-align: center;
+    font-size: 24px;
+  }
+  .shop__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .shop__card {
+    margin-top: 50px;
+    width: 300px;
+
+    border-radius: 16px;
+  }
+  .shop__card-wrapper {
+    padding: 10px;
+  }
+  .shop__card-photo img {
+    width: 100%;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+  }
+  .shop__card-photo img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
